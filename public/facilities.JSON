@@ -1,0 +1,66 @@
+[
+    {
+    "id": "1",
+    "categoryId": "cat-1",
+    "name": "Health Checkup",
+    "image": "https://i.ibb.co/kBRGNZ2/health-check-1.png",
+    "shortDesc": "Regular health checks can identify any early signs of health issues.When you have a health check, your doctor will talk with you about your medical history.",
+    "longDesc": "Regular health checks can identify any early signs of health issues. When you have a health check, your doctor will talk with you about your medical history, your family’s history of disease and your lifestyle, including your diet, weight, physical activity, alcohol use and whether you smoke. Your doctor may include a general health check when you visit for another reason, such as a cold. Your doctor can tell you how often you need health checks. "
+    },
+    {
+    "id": "2",
+    "categoryId": "cat-2",
+    "name": "Operation Theater",
+    "image": "https://i.ibb.co/N7wt4jv/operation-theater-1.png",
+    "shortDesc": "An operating theater (also known as an operating room (OR), operating suite, or operation suite) is a facility within a hospital where surgical operations are carried out in an aseptic environment.",
+    "longDesc": "An operating theater (also known as an operating room (OR), operating suite, or operation suite) is a facility within a hospital where surgical operations are carried out in an aseptic environment.Historically, the term 'operating theatre' referred to a non-sterile, tiered theater or amphitheater in which students and other spectators could watch surgeons perform surgery. Contemporary operating rooms are devoid of a theatre setting, making the term 'operating theater' a misnomer."
+    },
+    {
+    "id": "3",
+    "categoryId": "cat-4",
+    "name": "lab Tests",
+    "image": "https://i.ibb.co/VCCVTXQ/lab-test-1.png",
+    "shortDesc": "A medical procedure that involves testing a sample of blood, urine, or other substance from the body.",
+    "longDesc": "A medical procedure that involves testing a sample of blood, urine, or other substance from the body. Laboratory tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time."
+    },
+    {
+    "id": "4",
+    "categoryId": "cat-3",
+    "name": "Intensive Care",
+    "image": "https://i.ibb.co/TMXjknR/intensive-care.png",
+    "shortDesc": "An intensive care unit (ICU), also known as an intensive therapy unit or intensive treatment unit (ITU) or critical care unit (CCU), is a special department of a hospital or health care facility that provides intensive care medicine.",
+    "longDesc": "An intensive care unit (ICU), also known as an intensive therapy unit or intensive treatment unit (ITU) or critical care unit (CCU), is a special department of a hospital or health care facility that provides intensive care medicine. Intensive care units cater to patients with severe or life-threatening illnesses and injuries, which require constant care, close supervision from life support equipment and medication in order to ensure normal bodily functions. They are staffed by highly trained physicians, nurses and respiratory therapists who specialize in caring for critically ill patients. ICUs are also distinguished from general hospital wards by a higher staff-to-patient ratio and access to advanced medical resources and equipment that is not routinely available elsewhere. Common conditions that are treated within ICUs include acute respiratory distress syndrome, septic shock, and other life-threatening conditions."
+    },
+    {
+    "id": "5",
+    "categoryId": "cat-5",
+    "name": "Pharmacy Support",
+    "image": "https://i.ibb.co/LRNj7GZ/medicine-service-1.png",
+    "shortDesc": "The Pharmacy Team at HCP collaborates with our internal clinical department, providers, and directly with our members.",
+    "longDesc": "The Pharmacy Team at HCP collaborates with our internal clinical department, providers, and directly with our members. HCP pharmacists work alongside our case management teams reviewing patient care plans and making recommendations that ensure the accuracy and safety of prescribed medications. Our pharmacists play an integral role in the development of population health programs and the implementation of pharmaceuticals to increase patient experiences and outcomes. Our pharmacists can help you create personalized treatment plans for your patients, offer dosing and titration recommendations, advise on potential adverse reactions, provide drug-specific education, and complete medication reconciliations. Our team will work together with you, particularly during discharge planning, to educate your patients about their medications and dosing."
+    },
+    {
+    "id": "6",
+    "categoryId": "cat-5",
+    "name": "Digital Test Report",
+    "image": "https://i.ibb.co/vBt6MK5/lab-test-2.png",
+    "shortDesc": "Laboratories must ensure that the test results and pathology reports they transmit to a patient’s electronic health record (EHR) are accurate, complete, and presented in a useable format.",
+    "longDesc": "To determine the accuracy, completeness, and formatting of laboratory test results and pathology reports transmitted from the laboratory to the EHR. Participants from 45 institutions retrospectively reviewed results from 16 different laboratory tests, including clinical and anatomic pathology results, within the EHR used by their providers to view laboratory results. Results were evaluated for accuracy, presence of required elements, and usability. Both normal and abnormal results were reviewed for tests, some of which were performed in-house and others at a reference laboratory."
+    },
+    {
+    "id": "7",
+    "categoryId": "cat-4",
+    "name": "Ambulance Car",
+    "image": "https://i.ibb.co/9hj31NQ/mobile-service-1.png",
+    "shortDesc": "An ambulance is a medically equipped vehicle which transports patients to treatment facilities, such as hospitals.[1] Typically, out-of-hospital medical care is provided to the patient.",
+    "longDesc": "An ambulance is a medically equipped vehicle which transports patients to treatment facilities, such as hospitals.[1] Typically, out-of-hospital medical care is provided to the patient. Ambulances are used to respond to medical emergencies by emergency medical services. For this purpose, they are generally equipped with flashing warning lights and sirens. They can rapidly transport paramedics and other first responders to the scene, carry equipment for administering emergency care and transport patients to hospital or other definitive care. Most ambulances use a design based on vans or pick-up trucks. Others take the form of motorcycles, cars, buses, aircraft and boats."
+    },
+    {
+    "id": "8",
+    "categoryId": "cat-4",
+    "name": "Medicine Service",
+    "image": "https://i.ibb.co/LRNj7GZ/medicine-service-1.png",
+    "shortDesc": "The SDS team can draw on a history of more than 20 years’ experience in the area of ceramic implants for the development and production of ceramic implant series.",
+    "longDesc": "The SDS team can draw on a history of more than 20 years’ experience in the area of ceramic implants for the development and production of ceramic implant series. We are not only a manufacturer of ceramic implants, but also place replacement teeth made from zirconia ourselves for numerous patients each year at the SWISS BIOHEALTH CLINIC. A constant flow of feedback from our patients helps us to further develop our products and, in particular, to further optimize their durability. You too can benefit from the ceramic implants of Swiss Dental Solutions. Contact us or find a user close to you via our dentist search function."
+    }
+]

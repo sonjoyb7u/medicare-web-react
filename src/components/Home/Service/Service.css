@@ -1,0 +1,32 @@
+.service {
+  background-color: #f5f5f5;
+}
+.service-section span {
+  display: block;
+  font-size: 25px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+.service-section h2 {
+  display: block;
+  font-size: 25px;
+  color: #25304c;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.service .service-content .box {
+  margin: 2.5rem 0;
+}
+.service .service-content .box h3 {
+  font-size: 2rem;
+  color: #25304c;
+}
+.service .service-content .box h3 .service-icon {
+  margin: 0 1rem;
+  color: #00c4cc;
+}
+.service .service-content .box p {
+  font-size: 1rem;
+  padding-left: 5rem;
+  color: #25304c;
+}

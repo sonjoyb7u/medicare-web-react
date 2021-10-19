@@ -1,0 +1,35 @@
+.facilities .facilities-content {
+  margin: 20px 0;
+}
+.facilities .facilities-content .facility-box {
+  width: 100%;
+  height: 100%;
+  margin: 10px 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.facilities .facilities-content .facility-box .facility-img {
+  width: 100%;
+  height: 18rem;
+}
+.facilities .facilities-content .facility-box .facility-content {
+  padding: 0 20px 20px;
+}
+.facilities .facilities-content .facility-box .facility-content h3 {
+  font-size: 1.7rem;
+  color: #25304c;
+}
+.facilities .facilities-content .facility-box .facility-content p {
+  color: #25304c;
+}
+.facility-btn Button {
+  min-width: 100px;
+  background-color: #00c4cc;
+  border: transparent;
+  outline: none;
+  padding: 6px 20px;
+}
+.facility-btn Button:hover {
+  background-color: #00c4cc;
+}

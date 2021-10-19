@@ -1,0 +1,26 @@
+[
+    {
+    "id": "cat-1",
+    "name": "Cardiology"
+    },
+    {
+    "id": "cat-2",
+    "name": "Neurology"
+    },
+    {
+    "id": "cat-3",
+    "name": "Gynecological"
+    },
+    {
+    "id": "cat-4",
+    "name": "Laboratory"
+    },
+    {
+    "id": "cat-5",
+    "name": "Pediatrical"
+    },
+    {
+    "id": "cat-6",
+    "name": "Urology"
+    }
+]

@@ -1,0 +1,35 @@
+.footer {
+  background-color: #f5f5f5;
+}
+.footer p {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #25304c;
+}
+.footer a {
+  font-size: 1.2rem;
+  color: #25304c;
+  display: block;
+}
+.footer a:hover {
+  color: #00c4cc;
+}
+.footer h3 {
+  color: #25304c;
+}
+.social-link .social-icon {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #00c4cc;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.footer h6.copy-right {
+  width: 80%;
+  border-top: 1px solid #25304c;
+  padding: 2rem 0;
+}

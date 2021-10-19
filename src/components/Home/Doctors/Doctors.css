@@ -1,0 +1,50 @@
+.doctors .doctors-content .doctor-box {
+  width: 100%;
+  height: auto;
+  margin: 20px 10px;
+  text-align: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.doctors .doctors-content .doctor-box .doctor-img {
+  width: 100%;
+  height: auto;
+}
+.doctors .doctors-content .doctor-box .doctor-info {
+  background-color: #fff;
+  padding: 20px;
+}
+.doctors .doctors-content .doctor-box .doctor-info h3 {
+  color: #25304c;
+  font-size: 1.7rem;
+}
+.doctors .doctors-content .doctor-box .doctor-info span {
+  color: #00c4cc;
+  font-size: 1.5rem;
+}
+.doctors .doctors-content .doctor-box .doctor-info .social-link {
+  padding-top: 1.2rem;
+}
+.doctors .doctors-content .doctor-box .doctor-info .social-link .social-icon {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #00c4cc;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.all-doctor-btn Button {
+  min-width: 200px;
+  background-color: #00c4cc;
+  border: transparent;
+  outline: none;
+  padding: 15px 30px;
+}
+.all-doctor-btn Button:hover {
+  background-color: #00c4cc;
+}

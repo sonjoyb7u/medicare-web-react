@@ -1,0 +1,16 @@
+.appointment {
+  width: 100%;
+}
+.appointment .appointment-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.appointment .appointment-content form {
+  text-align: center;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}

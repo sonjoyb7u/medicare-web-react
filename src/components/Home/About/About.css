@@ -1,0 +1,36 @@
+.about {
+  /* background-color: #f5f5f5; */
+}
+.about .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .about-content span {
+  display: block;
+  font-size: 25px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+.about .about-content h3 {
+  display: block;
+  font-size: 25px;
+  color: #25304c;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.about .about-content p {
+  font-size: 1rem;
+  color: #25304c;
+}
+.about-btn Button {
+  min-width: 180px;
+  background-color: #00c4cc;
+  border: transparent;
+  outline: none;
+  padding: 15px 30px;
+}
+
+.about-btn Button:hover {
+  background-color: #00c4cc;
+}

@@ -1,0 +1,66 @@
+[
+    {
+    "id": "1",
+    "name": "DR. A. S. M. ZAHED",
+    "image": "https://i.ibb.co/KK720HV/doctor-1.png",
+    "dept": "MBBS, FCPS (Medicine)",
+    "SocialLink": {
+        "facebook": "https://www.facebook.com/dr.zahid",
+        "linkedin": "https://www.linkedin.com/dr.zahid",
+        "twitter": "https://www.twitter.com/dr.zahid"
+    }
+    },
+    {
+    "id": "2",
+    "name": "DR. MOHAMMAD REZAUL KARIM",
+    "image": "https://i.ibb.co/Ksxy7b8/doctor-2.png",
+    "dept": "MBBS, BCS (Health)",
+    "SocialLink": {
+        "facebook": "https://www.facebook.com/dr.rezaul",
+        "linkedin": "https://www.linkedin.com/dr.rezaul",
+        "twitter": "https://www.twitter.com/dr.rezaul"
+    }
+    },
+    {
+    "id": "3",
+    "name": "DR. MD. MUHITUL ISLAM",
+    "image": "https://i.ibb.co/37x1Yrh/doctor-3.png",
+    "dept": "MBBS, MD (Neuro Medicine)",
+    "SocialLink": {
+        "facebook": "https://www.facebook.com/dr.muhitul",
+        "twitter": "https://www.twitter.com/dr.muhitul"
+    }
+    },
+    {
+    "id": "4",
+    "name": "DR. MOHAMMAD JASHIM UDDIN",
+    "image": "https://i.ibb.co/1dp5phM/doctor-4.png",
+    "dept": "MBBS, FCPS (Gastroenterology)",
+    "SocialLink": {
+        "facebook": "https://www.facebook.com/dr.zashim",
+        "linkedin": "https://www.linkedin.com/dr.zashim",
+        "twitter": "https://www.twitter.com/dr.zashim"
+    }
+    },
+    {
+    "id": "5",
+    "name": "DR. TOUHIDUR RAHMAN",
+    "image": "https://i.ibb.co/y07typR/doctor-5.png",
+    "dept": "MBBS, FCPS (Neurology)",
+    "SocialLink": {
+        "facebook": "https://www.facebook.com/dr.touhidur",
+        "linkedin": "https://www.linkedin.com/dr.touhidur",
+        "twitter": "https://www.twitter.com/dr.touhidur"
+    }
+    },
+    {
+    "id": "6",
+    "name": "DR. ISTIAK AHMAD",
+    "image": "https://i.ibb.co/fDgv90d/doctor-6.png",
+    "dept": "MBBS, BCS (Health) MCPS, FCPS (Medicine) MACP (USA)",
+    "SocialLink": {
+        "facebook": "https://www.facebook.com/dr.istiak",
+        "linkedin": "https://www.linkedin.com/dr.istiak"
+    }
+    }
+]

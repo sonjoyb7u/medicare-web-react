@@ -1,0 +1,27 @@
+.counter {
+  background-color: #f5f5f5;
+}
+.counter .counter-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.counter .counter-content .counter-box {
+  margin: 2rem 4.5rem;
+  text-align: center;
+}
+.counter .counter-content .counter-box .counter-icon {
+  color: #00c4cc;
+  font-size: 2.8rem;
+}
+.counter .counter-content .counter-box .counter-info span {
+  color: #25304c;
+  font-size: 2rem;
+  display: block;
+}
+.counter .counter-content .counter-box .counter-info h3 {
+  color: #25304c;
+  font-size: 1.5rem;
+  display: block;
+}

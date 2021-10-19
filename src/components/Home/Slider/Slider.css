@@ -1,0 +1,43 @@
+section {
+  margin-top: 85px;
+}
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider-content span.slider-title {
+  display: inline-block;
+  color: #00c4cc;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.slider-content h2.slider-head {
+  display: block;
+  font-size: 48px;
+  line-height: 1.2em;
+  color: #25304c;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.slider-content p.slider-desc {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: #25304c;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.slider-btn Button {
+  min-width: 180px;
+  background-color: #00c4cc;
+  border: transparent;
+  outline: none;
+  padding: 15px 30px;
+}
+
+.slider-btn Button:hover {
+  background-color: #00c4cc;
+}

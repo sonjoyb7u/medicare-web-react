@@ -1,0 +1,41 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f5f5f5;
+}
+.item {
+  list-style: none;
+  font-size: 20px;
+  margin: 16px;
+}
+Button.appointment-btn {
+  background-color: #00c4cc;
+  border: #00c4cc;
+  outline: none;
+}
+Button.appointment-btn:hover {
+  background-color: #00c4cc;
+  border: #00c4cc;
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent {
+    background-color: #00c4cc;
+    margin-left: 0 !important;
+    border: 2px solid #00c4cc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  #navbarSupportedContent ul li {
+    border-bottom: 1px solid #eee;
+  }
+  #navbarSupportedContent ul li:last-child {
+    border-bottom: none;
+  }
+  #navbarSupportedContent .appointment-btn {
+    background-color: #25304c;
+  }
+}
