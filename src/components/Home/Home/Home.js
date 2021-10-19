@@ -26,7 +26,7 @@ const Home = () => {
     }, [])
 
     return (
-        <div>
+        <div id="home">
             <Slider></Slider>
             <About></About>
             <Service></Service>
