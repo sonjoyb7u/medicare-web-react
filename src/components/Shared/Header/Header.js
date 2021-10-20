@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { useHistory, useLocation } from 'react-router'
 import { Button, Image, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
@@ -7,9 +8,10 @@ import logo from './../../../assets/images/logo/medicare_logo_2.png'
 import './Header.css'
 
 const Header = () => {
-    const {signOutUsingGoogle, user, successMsg, errorMsg} = useAuth()
+    const {signOutUsingGoogle, user, setUser, setSuccessMsg, successMsg, setErrorMsg, errorMsg, setIsLoading} = useAuth()
     // console.log(user);
 
+    // Scroll to add navbar background active css class ...
     const [navbarBg, setNavbarBg] = useState(false)
     const changeNavbarBackground = () => {
         // console.log(window.scrollY);
@@ -20,11 +22,35 @@ const Header = () => {
             setNavbarBg(false)
         }
     }
-
     window.addEventListener('scroll', changeNavbarBackground)
 
+    const location = useLocation()
+    // console.log(location.state?.from);
+    const history = useHistory()
+    const redirect_url = '/';
+
+    const handleLogoutProcess = (e) => {
+        e.preventDefault();
+        signOutUsingGoogle()
+        .then(() => {
+            setUser({})
+            setErrorMsg('')
+            setSuccessMsg('')
+            // setSuccessMsg('You are successfully logged out...')
+            history.push(redirect_url)
+        })
+        .finally(() => {
+            setIsLoading(false)
+        })
+        .catch((error) => {
+            setSuccessMsg('')
+            setErrorMsg("Something wrong with user logout!")
+        })
+
+    }
+
     return (
-        <div>
+        <>
             <header className={navbarBg ? 'header active' : 'header'}>
                 <nav className="navbar navbar-expand-lg navbar-light p-0">
                     <div className="container">
@@ -83,7 +109,7 @@ const Header = () => {
                                                 <Link as={Link} className="dropdown-item" to="/home">Profile</Link>
                                             </li>
                                             <li>
-                                                <Button variant="link" onClick={signOutUsingGoogle} className="dropdown-item text-dark">Logout</Button>
+                                                <Button variant="link" onClick={handleLogoutProcess} className="dropdown-item text-dark">Logout</Button>
                                             </li>
                                         </ul>
                                     </li> 
@@ -105,7 +131,7 @@ const Header = () => {
                 <span className="text-success fw-bold d-block text-center">{successMsg}</span>
                 <span className="text-danger fw-bold d-block text-center">{errorMsg}</span>
             </header>
-        </div>
+        </>
     );
 };
 

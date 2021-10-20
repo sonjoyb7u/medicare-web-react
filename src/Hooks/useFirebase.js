@@ -90,19 +90,8 @@ const useFirebase = () => {
     // User logout process ...
     const signOutUsingGoogle = () => {
         setIsLoading(true)
-        
-        signOut(auth)
-        .then(() => {
-            setUser({})
-            setSuccessMsg('')
-            setErrorMsg('')
-        })
-        .finally(() => {
-            setIsLoading(false)
-        })
-        .catch((error) => {
-            setErrorMsg("Something wrong with user logout!")
-        })
+        return signOut(auth)
+
     }
 
 
