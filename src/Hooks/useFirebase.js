@@ -1,5 +1,5 @@
 import initializeAuthentication from "../Firebase/firebase.init"
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, signInWithEmailAndPassword, onAuthStateChanged, signOut, sendPasswordResetEmail } from "firebase/auth";
 import { useEffect, useState } from "react";
 
 
@@ -67,24 +67,30 @@ const useFirebase = () => {
 
     // Send email verification link ...
     const sendLinkToEmailForVerify = () => {
-        // sendEmailVerification(auth.currentUser)
-        // .then(() => {
-        //     setSuccessMsg('The verify link has been sent to your mail, please click to verified & keep login...')
-        // })
+        sendEmailVerification(auth.currentUser)
+        .then(() => {
+            setSuccessMsg('The verify link has been sent to your mail, please click to verified & keep login...')
+        })
     }
 
 
-    // 
-  const signInProcess = (email, password) => {
-    setIsLoading(true)
-    return signInWithEmailAndPassword(auth, email, password)
-      
-  }
+    // Custom Login process ...
+    const customSignInProcess = (email, password) => {
+        setIsLoading(true)
+        return signInWithEmailAndPassword(auth, email, password)
+        
+    }
+
+    // Password reset link send to email addresses ...
+    const forgotPassword = (email) => {
+        return sendPasswordResetEmail(auth, email)
+    }
 
 
     // User logout process ...
     const signOutUsingGoogle = () => {
         setIsLoading(true)
+        
         signOut(auth)
         .then(() => {
             setUser({})
@@ -105,14 +111,15 @@ const useFirebase = () => {
         handleCustomRegistration,
         setUserFullName,
         sendLinkToEmailForVerify,
-        signInProcess,
+        customSignInProcess,
         successMsg,
         setSuccessMsg,
         errorMsg,
         setErrorMsg,
         isLoading,
         setIsLoading,
-        signOutUsingGoogle
+        signOutUsingGoogle,
+        forgotPassword
     }
 }
 

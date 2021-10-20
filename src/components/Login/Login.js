@@ -13,7 +13,7 @@ library.add(fab);
 
 const Login = () => {
     // const {signInUsingGoogle, user, errorMsg} = useFirebase() // 1st option
-    const {signInUsingGoogle, signInProcess, user, setUser, setIsLoading, successMsg, setSuccessMsg, errorMsg, setErrorMsg} = useAuth() // 2nd option
+    const {signInUsingGoogle, customSignInProcess, user, setUser, setIsLoading, successMsg, setSuccessMsg, errorMsg, setErrorMsg, forgotPassword} = useAuth() // 2nd option
 
     const location = useLocation()
     // console.log(location.state?.from);
@@ -49,7 +49,7 @@ const Login = () => {
 
     const handleCustomLoginProcess = (e) => {
         e.preventDefault();
-        signInProcess(email, password)
+        customSignInProcess(email, password)
         .then((userCredential) => {
             const {displayName, email, photoURL} = userCredential.user;
             // const customLoggedInUser = {
@@ -73,8 +73,12 @@ const Login = () => {
         })
     }
 
+    // Password reset link send to email addresses ...
     const handleForgotPassword = () => {
-
+        forgotPassword(email)
+        .then(() => {
+            setSuccessMsg('Reset password link has been sent.')
+        })
     }
 
     return (

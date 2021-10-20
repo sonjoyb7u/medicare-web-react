@@ -17,9 +17,9 @@ const Registration = () => {
     const location = useLocation()
     // console.log(location.state?.from);
     const history = useHistory()
-    const redirect_url = location.state?.from || '/registration';
+    const redirect_url = location.state?.from || '/';
 
-        // Custom registration form using firebase ...
+    // Custom registration form using firebase ...
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -104,22 +104,9 @@ const Registration = () => {
                                     <Button className="ml-auto register-btn" type="submit">
                                         Register
                                     </Button>
-                                    {/* <Button className="ml-auto" variant="primary" type="submit">
-                                    Register
-                                    </Button> */}
 
                                 </Form>
-                                <div className="social-media">
-                                <hr />
-                                    <h5>Or, use one of these options</h5>
-                                    <Button className="btn btn-danger mt-2 text-light fw-bold"><FontAwesomeIcon icon={['fab', 'google']} /></Button>&nbsp;&nbsp;
-                                    <Button className="btn btn-primary mt-2 text-light fw-bold"><FontAwesomeIcon icon={['fab', 'facebook']} /></Button>&nbsp;&nbsp;
-                                    <Button className="btn btn-dark mt-2 text-light fw-bold"><FontAwesomeIcon icon={['fab', 'github']} /></Button>&nbsp;&nbsp;
-                                    <Button className="btn btn-info mt-2 text-light fw-bold"><FontAwesomeIcon icon={['fab', 'twitter']} /></Button>&nbsp;&nbsp;
-                                    <Button className="btn btn-success mt-2 text-light fw-bold"><FontAwesomeIcon icon={['fab', 'microsoft']} /></Button>&nbsp;&nbsp;
-                                    <Button className="btn btn-dark mt-2 text-light fw-bold"><FontAwesomeIcon icon={['fab', 'apple']} /></Button>&nbsp;&nbsp;
-                                </div>
-                                </div>
+                            </div>
                         </div>
                     </Col>
                     <Col md={3} lg={3}></Col>
