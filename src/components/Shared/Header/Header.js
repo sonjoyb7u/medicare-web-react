@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { Button, Image, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -10,9 +10,22 @@ const Header = () => {
     const {signOutUsingGoogle, user} = useAuth()
     // console.log(user);
 
+    const [navbarBg, setNavbarBg] = useState(false)
+    const changeNavbarBackground = () => {
+        // console.log(window.scrollY);
+        if(window.scrollY >= 80) {
+            setNavbarBg(true)
+        }
+        else {
+            setNavbarBg(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbarBackground)
+
     return (
         <>
-            <header className="header">
+            <header className={navbarBg ? 'header active' : 'header'}>
                 <nav className="navbar navbar-expand-lg navbar-light p-0">
                     <div className="container">
                         <Link as={Link} className="navbar-brand me-3" to="/">
