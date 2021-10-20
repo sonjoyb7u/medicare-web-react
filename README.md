@@ -6,7 +6,7 @@
 
 ## Features:
 
-- Implement react-bootstrap, react-router-dom, 3rd party api - Firebase, react font-awesome, google font.
+- Implement react-bootstrap, react-router-dom, react router-hash-link, 3rd party api - Firebase auth, react font-awesome, google font, react aos package.
 - See Homepage - slider, medical facilities, services, counters.
 - See Single facility detail access by using custom Or google firebase api authentication & authorization.
 - Get an doctors appointment access by using custom Or google firebase api authentication & authorization.

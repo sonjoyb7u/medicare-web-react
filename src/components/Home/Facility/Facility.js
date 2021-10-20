@@ -26,7 +26,7 @@ const Facility = (props) => {
         <>
             <div className="facilities-content col-lg-4 col-md-6 col-sm-12">
                 <div className="facility-box">
-                    <div className="facility-img" data-aos="zoom-in">
+                    <div className="facility-img" data-aos="zoom-in-down">
                         <Image className="w-100 h-100" src={image} alt="Facilities Image"></Image>
                     </div>
                     <div className="facility-content">

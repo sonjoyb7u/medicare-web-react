@@ -13,7 +13,7 @@ const Doctor = (props) => {
     return (
         <>
            <div className="doctors-content col-lg-3 col-md-6 col-sm-12">
-                <div className="doctor-box" data-aos="fade-left">
+                <div className="doctor-box" data-aos="flip-right">
                     <div className="doctor-img">
                         <Image className="w-100 h-100" src={image} alt="Doctor Image"></Image>
                     </div>
