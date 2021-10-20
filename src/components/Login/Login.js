@@ -18,7 +18,7 @@ const Login = () => {
     const location = useLocation()
     // console.log(location.state?.from);
     const history = useHistory()
-    const redirect_url = location.state?.from || '/login'; 
+    const redirect_url = location.state?.from || '/home'; 
 
     const handleSingInUsingGoogle = () => {
         setIsLoading(true)
@@ -26,6 +26,7 @@ const Login = () => {
         .then((result) => {
             // console.log(result);
             setUser(result.user);
+            setSuccessMsg('Wow, You are successfully logged In...')
             history.push(redirect_url)
         })
         .finally(() => {
@@ -58,8 +59,7 @@ const Login = () => {
             // image: photoURL
             // }
             setErrorMsg('')
-            setSuccessMsg('') 
-            setSuccessMsg('You are successfully logged In...')
+            setSuccessMsg('Wow, You are successfully logged In...')
             history.push(redirect_url)
     
         })
@@ -67,8 +67,8 @@ const Login = () => {
             const errMsg = error.message
             // console.log(errMsg);
             if(errMsg) {
-            setSuccessMsg('') 
-            setErrorMsg("Sign-in Error!!! - " + errMsg)
+                setSuccessMsg('') 
+                setErrorMsg("Sign-in Error!!! - " + errMsg)
             }
         })
     }
@@ -77,6 +77,7 @@ const Login = () => {
     const handleForgotPassword = () => {
         forgotPassword(email)
         .then(() => {
+            setErrorMsg('')
             setSuccessMsg('Reset password link has been sent.')
         })
     }

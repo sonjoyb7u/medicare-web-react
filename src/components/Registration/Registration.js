@@ -17,7 +17,7 @@ const Registration = () => {
     const location = useLocation()
     // console.log(location.state?.from);
     const history = useHistory()
-    const redirect_url = location.state?.from || '/';
+    const redirect_url = location.state?.from || '/home';
 
     // Custom registration form using firebase ...
     const [fullName, setFullName] = useState('')

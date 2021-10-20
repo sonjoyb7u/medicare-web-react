@@ -94,6 +94,8 @@ const useFirebase = () => {
         signOut(auth)
         .then(() => {
             setUser({})
+            setSuccessMsg('')
+            setErrorMsg('')
         })
         .finally(() => {
             setIsLoading(false)

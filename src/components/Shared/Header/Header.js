@@ -7,7 +7,7 @@ import logo from './../../../assets/images/logo/medicare_logo_2.png'
 import './Header.css'
 
 const Header = () => {
-    const {signOutUsingGoogle, user} = useAuth()
+    const {signOutUsingGoogle, user, successMsg, errorMsg} = useAuth()
     // console.log(user);
 
     const [navbarBg, setNavbarBg] = useState(false)
@@ -24,7 +24,7 @@ const Header = () => {
     window.addEventListener('scroll', changeNavbarBackground)
 
     return (
-        <>
+        <div>
             <header className={navbarBg ? 'header active' : 'header'}>
                 <nav className="navbar navbar-expand-lg navbar-light p-0">
                     <div className="container">
@@ -55,22 +55,29 @@ const Header = () => {
                                 <li className="nav-item">
                                     <Link as={Link} className="nav-link" to="/contact">Contact</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link as={Link} className="nav-link" to="/registration">Registration</Link>
-                                </li>
+                                {
+                                    user?.email 
+                                    ?
+                                    ""
+                                    : 
+
+                                    <li className="nav-item">
+                                        <Link as={Link} className="nav-link" to="/registration">Registration</Link>
+                                    </li>
+                                }
 
                                 {
                                     user?.email 
                                     ?
                                     <li className="nav-item dropdown">
-                                        <Link as={Link} to="#" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <NavLink as={HashLink} to="#" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         {
                                             user?.photoURL ?
                                             <Image style={{ width: "40px", borderRadius: '25px' }} src={user?.photoURL}></Image>
                                             : 
                                             user?.displayName
                                         }
-                                        </Link>
+                                        </NavLink>
                                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li>
                                                 <Link as={Link} className="dropdown-item" to="/home">Profile</Link>
@@ -95,8 +102,10 @@ const Header = () => {
                         </div>
                     </div>
                 </nav>
+                <span className="text-success fw-bold d-block text-center">{successMsg}</span>
+                <span className="text-danger fw-bold d-block text-center">{errorMsg}</span>
             </header>
-        </>
+        </div>
     );
 };
 

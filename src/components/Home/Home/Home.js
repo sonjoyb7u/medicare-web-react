@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import useAuth from '../../../Hooks/useAuth';
 import About from '../About/About';
 import Counter from '../Counter/Counter';
 import Doctors from '../Doctors/Doctors';
@@ -8,6 +9,8 @@ import Slider from '../Slider/Slider';
 import './Home.css'
 
 const Home = () => {
+    const {successMsg, errorMsg} = useAuth()
+
     const [facilities, setFacilities] = useState([])
     const [doctors, setDoctors] = useState([])
 
