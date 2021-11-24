@@ -20,6 +20,7 @@ const Login = () => {
     const history = useHistory()
     const redirect_url = location.state?.from || '/home'; 
 
+    // Google login process using Firebase ...
     const handleSingInUsingGoogle = () => {
         setIsLoading(true)
         signInUsingGoogle()
